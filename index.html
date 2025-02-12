@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentinstag</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container" id="question">
+    <h2>Hallo Kein</h2>
+    <p>Darf man was fragen?</p>
+    <h3>Willst mein Valentinstagsdate sein?(wenn nicht dann Affi)</h3>
+    <button class="yes" id="yesButton" onclick="showConfirmation()">Ja</button>
+    <button class="no" id="noButton" onclick="increaseYesButton()">Nein</button>
+    <p id="message"></p>
+</div>
+
+<div class="container" id="confirmation" style="display: none;">
+    <h2>Hallo Liebes Kein,</h2>
+    <p>Dies ist deine Terminbestätigung für Freitag 18:00 Uhr, in der L’osteria.</p>
+    <p>Um deine Stimme weiterhin zu verschonen, sage ich unseren Kinobesuch ab.</p>
+
+    <!-- Gutschein -->
+    <div class="gutschein">
+        <h3>Valentinstags-Gutschein 💝</h3>
+        <p><strong>Dresscode:</strong> schick, elegant</p>
+        <p><strong>Nicht vergessen:</strong> deine Stimme und gute Laune ❤️</p>
+    </div>
+
+    <!-- Google Maps (L’Osteria Augsburg Lechhausen) -->
+    <h3>Hier ist der Weg zur L’Osteria:</h3>
+    <div class="map-container">
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.164820402913!2d10.929733777339073!3d48.38409397118202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479eb44353d85891%3A0x2522b3e42a1cdab7!2sL&#39;Osteria%20Augsburg%20Lechhausen!5e0!3m2!1sde!2sde!4v1707738985111"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- Kalender Button -->
+    <button class="calendar-btn" onclick="downloadCalendarEvent()">📅 Brauchst du eine Erinnerung? Hier speichern</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

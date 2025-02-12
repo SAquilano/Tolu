@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe6e6;
+    padding: 50px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.yes {
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.no {
+    background-color: #999;
+    color: white;
+}
+
+#message {
+    font-weight: bold;
+    color: #d9534f;
+    min-height: 20px;
+}
+
+/* Gutschein-Stil */
+.gutschein {
+    background: #fff5e1;
+    border: 2px dashed #ff4d4d;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+}
+
+.gutschein h3 {
+    color: #ff4d4d;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.gutschein p {
+    color: #333;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Kalender-Button */
+.calendar-btn {
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.calendar-btn:hover {
+    background-color: #d94343;
+}
+
+/* Google Maps */
+.map-container {
+    margin-top: 15px;
+}
+
